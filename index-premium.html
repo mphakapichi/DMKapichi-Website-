@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- CSP Header -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; video-src 'self' https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+
+    <!-- SEO -->
+    <title>Dickson Mervyn Kapichi - Cybersecurity Specialist & Offensive Security Expert</title>
+    <meta name="description" content="Cybersecurity specialist, penetration tester, and infrastructure architect. Expert in offensive security, Active Directory, and cloud infrastructure. Available for consulting and strategic advisory roles.">
+    <meta name="keywords" content="cybersecurity, penetration testing, offensive security, infrastructure security, Active Directory, cloud security, malware analysis, incident response">
+    <meta name="author" content="Dickson Mervyn Kapichi">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://dmkapichi.tech/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dmkapichi.tech/">
+    <meta property="og:title" content="Dickson Mervyn Kapichi - Cybersecurity Specialist">
+    <meta property="og:description" content="Offensive security specialist & infrastructure architect specializing in penetration testing, network hardening, and cloud infrastructure security.">
+    <meta property="og:image" content="/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dmkapichi.tech/">
+    <meta property="twitter:title" content="Dickson Mervyn Kapichi - Cybersecurity Specialist">
+    <meta property="twitter:description" content="Offensive security specialist & infrastructure architect.">
+    <meta property="twitter:creator" content="@pray4merv">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dickson Mervyn Kapichi",
+        "jobTitle": "Cybersecurity Specialist & Infrastructure Architect",
+        "url": "https://dmkapichi.tech",
+        "email": "d.kapichi@outlook.com",
+        "telephone": "+265884499029",
+        "sameAs": [
+            "https://www.linkedin.com/in/dickson-mervyn-kapichi/",
+            "https://github.com/Odyseccus",
+            "https://x.com/pray4merv"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Malawi",
+            "addressRegion": "Lilongwe"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline preload="auto">
+            <source src="https://videos.pexels.com/video-files/3130279/3130279-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">Kapichi</span>
+                <span class="logo-bracket">}</span>
+                <span class="logo-semicolon">;</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I am</p>
+            <h1 class="hero-title">Dickson Mervyn Kapichi</h1>
+            <p class="hero-subtitle">
+                Turning complex security challenges into elegant, resilient solutions — across networks, infrastructure, and cloud.
+            </p>
+            <div class="hero-actions">
+                <a href="#about" class="btn btn-primary">About Me</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Odyseccus" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dickson-mervyn-kapichi/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/pray4merv" target="_blank" rel="noopener noreferrer" title="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://tryhackme.com/p/Odyseccus" target="_blank" rel="noopener noreferrer" title="TryHackMe">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.194-3.27c.05 0 .1.002.15.005a.625.625 0 0 0 .677-.54C5.952 3.232 8.13 1.25 10.705 1.25c2.944 0 5.336 2.392 5.336 5.336v.211c0 .199.093.386.252.506.756.571 1.193 1.44 1.193 2.383a2.835 2.835 0 0 1-2.833 2.833h-1.578a.625.625 0 1 0 0 1.25h1.578c2.255 0 4.083-1.828 4.083-4.083 0-1.223-.528-2.354-1.415-3.088v-.012C17.321 3.098 14.328 0 10.705 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p class="about-intro">
+                        Cybersecurity Specialist. Infrastructure Architect. Problem Solver.
+                    </p>
+                    <p>
+                        I am Dickson Mervyn Kapichi — a cybersecurity specialist and infrastructure architect with over 6 years of hands-on experience turning complex security challenges into elegant, resilient solutions.
+                    </p>
+                    <p>
+                        I design and build secure systems that are not just functional, but genuinely impactful — from penetration testing and vulnerability assessments to enterprise infrastructure hardening and cloud security architecture. I combine technical depth with strategic thinking, having delivered solutions for government bodies, NGOs, startups, and enterprises across Malawi.
+                    </p>
+                    <p>
+                        I hold a BSc in Management Information Systems and am actively pursuing advanced certifications in offensive security (CPTS, OSCP). My expertise spans Active Directory administration, Linux/Windows hardening, network security, digital forensics, and cloud infrastructure.
+                    </p>
+                    <a href="#contact" class="btn btn-link">Learn more about me →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Grid -->
+    <section class="section expertise-section">
+        <div class="container">
+            <h2>Core Expertise</h2>
+            <div class="expertise-grid">
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Offensive Security</h3>
+                    <p>Penetration testing, vulnerability assessments, network reconnaissance, exploitation, and post-exploitation techniques.</p>
+                </article>
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infrastructure Security</h3>
+                    <p>Active Directory hardening, GPO management, server configuration, multi-site architecture, and security baselines.</p>
+                </article>
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Security</h3>
+                    <p>AWS, Azure, GCP security configuration, identity management, compliance frameworks, and cloud architecture design.</p>
+                </article>
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>System Hardening</h3>
+                    <p>Linux/Windows hardening, network segmentation, security policies, compliance implementation, and remediation.</p>
+                </article>
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Digital Forensics</h3>
+                    <p>Incident investigation, evidence collection & analysis, forensic reporting, chain of custody, and threat hunting.</p>
+                </article>
+                <article class="expertise-card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Infrastructure Management</h3>
+                    <p>Multi-site administration, systems management, technical support, disaster recovery, and IT operations.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <p class="section-subtitle">Check out what I have worked on lately</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Penetration Testing Suite</h3>
+                    </div>
+                    <p>Comprehensive penetration testing methodology and tools implementation for multi-site infrastructure assessment.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">Penetration Testing</span>
+                        <span class="meta-tag">Security Assessment</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-directory"></i>
+                        </div>
+                        <h3>Active Directory Infrastructure</h3>
+                    </div>
+                    <p>Enterprise Active Directory redesign with GPO management, security hardening, and multi-site replication.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">Infrastructure</span>
+                        <span class="meta-tag">Active Directory</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Digital Forensics Case Study</h3>
+                    </div>
+                    <p>Comprehensive forensic investigation covering cybercriminal profiling, fraud analysis, and digital evidence.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">Forensics</span>
+                        <span class="meta-tag">Investigation</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-footer">
+                <a href="#contact" class="btn btn-link">All projects →</a>
+                <a href="https://github.com/Odyseccus" target="_blank" rel="noopener noreferrer" class="btn btn-link">
+                    Github <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="section clients-section">
+        <div class="container">
+            <h2>Clients & Collaborators</h2>
+            <p class="section-subtitle">I have worked with and for amazing organizations</p>
+            
+            <div class="clients-grid">
+                <div class="client-item">
+                    <div class="client-placeholder">Computer Automation Ltd</div>
+                </div>
+                <div class="client-item">
+                    <div class="client-placeholder">Lync Systems</div>
+                </div>
+                <div class="client-item">
+                    <div class="client-placeholder">Goal3 (ML/Data)</div>
+                </div>
+                <div class="client-item">
+                    <div class="client-placeholder">University of Malawi</div>
+                </div>
+                <div class="client-item">
+                    <div class="client-placeholder">Malawi Government</div>
+                </div>
+                <div class="client-item">
+                    <div class="client-placeholder">HackTheBox</div>
+                </div>
+            </div>
+
+            <p class="clients-note">Empowering ideas through partnerships that matter.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2>Get in Touch</h2>
+                    <p>Let's collaborate on a project or just say hi. Available for consulting, advisory roles, and strategic partnerships.</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required aria-label="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required aria-label="Your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required aria-label="Message subject">
+                            <option value="">-- Select --</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="mentorship">Mentorship</option>
+                            <option value="recruitment">Recruitment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-label="Your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-notice">Or reach out directly: <a href="mailto:d.kapichi@outlook.com">d.kapichi@outlook.com</a></p>
+                </form>
+
+                <div class="contact-sidebar">
+                    <div class="contact-info">
+                        <h3>Quick Contact</h3>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:d.kapichi@outlook.com">d.kapichi@outlook.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+265884499029">+265 884 499 029</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lilongwe, Malawi</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links-section">
+                        <h3>Connect</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/Odyseccus" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/dickson-mervyn-kapichi/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/pray4merv" target="_blank" rel="noopener noreferrer" title="Twitter">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://tryhackme.com/p/Odyseccus" target="_blank" rel="noopener noreferrer" title="TryHackMe">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.194-3.27c.05 0 .1.002.15.005a.625.625 0 0 0 .677-.54C5.952 3.232 8.13 1.25 10.705 1.25c2.944 0 5.336 2.392 5.336 5.336v.211c0 .199.093.386.252.506.756.571 1.193 1.44 1.193 2.383a2.835 2.835 0 0 1-2.833 2.833h-1.578a.625.625 0 1 0 0 1.25h1.578c2.255 0 4.083-1.828 4.083-4.083 0-1.223-.528-2.354-1.415-3.088v-.012C17.321 3.098 14.328 0 10.705 0z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/Odyseccus" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/dickson-mervyn-kapichi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://x.com/pray4merv" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 · Crafted with passion by Dickson Mervyn Kapichi · All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

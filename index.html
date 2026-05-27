@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=(), fullscreen=(), payment=()">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+
+    <!-- SEO Meta Tags -->
+    <title>Dickson Mervyn Kapichi - Cybersecurity Expert | Offensive Security & Infrastructure</title>
+    <meta name="description" content="Cybersecurity specialist, penetration tester, and infrastructure architect. Expert in offensive security, network hardening, Active Directory, and cloud infrastructure. ICT Technician at Computer Automation Ltd, Malawi.">
+    <meta name="keywords" content="cybersecurity, penetration testing, offensive security, network security, Active Directory, infrastructure, cloud security, malware analysis, IT consultant, Malawi">
+    <meta name="author" content="Dickson Mervyn Kapichi">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#020617">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dmkapichi.tech/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dmkapichi.tech/">
+    <meta property="og:title" content="Dickson Mervyn Kapichi - Cybersecurity Expert">
+    <meta property="og:description" content="Offensive security specialist & infrastructure architect. Penetration testing, network hardening, cloud security, Active Directory management.">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Dickson Mervyn Kapichi">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dmkapichi.tech/">
+    <meta property="twitter:title" content="Dickson Mervyn Kapichi - Cybersecurity Expert">
+    <meta property="twitter:description" content="Offensive security specialist & infrastructure architect with expertise in penetration testing, network security, and cloud infrastructure.">
+    <meta property="twitter:image" content="/images/twitter-image.jpg">
+    <meta property="twitter:creator" content="@pray4merv">
+
+    <!-- Fonts with integrity -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome with SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dickson Mervyn Kapichi",
+        "jobTitle": "Cybersecurity Specialist & Infrastructure Architect",
+        "description": "Offensive security specialist with expertise in penetration testing, network security, Active Directory management, and cloud infrastructure security.",
+        "url": "https://dmkapichi.tech",
+        "email": "d.kapichi@outlook.com",
+        "telephone": "+265884499029",
+        "sameAs": [
+            "https://www.linkedin.com/in/dickson-mervyn-kapichi/",
+            "https://github.com/Odyseccus",
+            "https://x.com/pray4merv",
+            "https://tryhackme.com/p/Odyseccus",
+            "https://app.hackthebox.com/users/952852"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Malawi",
+            "addressRegion": "Lilongwe"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "University of Malawi, The Polytechnic"
+        },
+        "knowsAbout": [
+            "Cybersecurity",
+            "Offensive Security",
+            "Penetration Testing",
+            "Network Security",
+            "Active Directory",
+            "Cloud Infrastructure",
+            "Malware Analysis",
+            "System Administration",
+            "Digital Forensics"
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Google Cybersecurity Certificate"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "(ISC)² Certified Associate"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Cisco Certifications"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Fortinet NSE 1-3"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "CSI Linux Certified"
+            }
+        ],
+        "workLocation": {
+            "@type": "Place",
+            "name": "Computer Automation Ltd",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Malawi"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="loader"></div>
+            <div class="loader-text">Initializing Security Systems</div>
+            <div class="loader-subtext">Establishing secure connection...</div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+                <i class="fas fa-shield-alt"></i> DMK
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light and dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-gradient"></div>
+        <canvas id="particles-canvas" class="particles-canvas"></canvas>
+        
+        <div class="hero-content">
+            <p class="hero-intro">HI, I AM</p>
+            <h1 class="hero-name">Dickson Mervyn Kapichi</h1>
+            <p class="hero-subtitle">Cybersecurity Specialist — Offensive Security & Infrastructure</p>
+            <p class="hero-description">Penetration testing, network hardening, Active Directory management, and cloud infrastructure security. Securing enterprises across Malawi and the region.</p>
+
+            <div class="role-badges" aria-hidden="true">
+                <span>Innovator</span>
+                <span>Leader</span>
+                <span>Problem Solver</span>
+            </div>
+
+            <div class="button-group">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    <span>Get in Touch</span>
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=1ePmvV_UJQ3nE74LDnLRRURH2TNjMvl82" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fas fa-file-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dickson-mervyn-kapichi/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Odyseccus" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/pray4merv" target="_blank" rel="noopener noreferrer" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://tryhackme.com/p/Odyseccus" target="_blank" rel="noopener noreferrer" class="social-icon" title="TryHackMe">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 1.25rem; height: 1.25rem;">
+                        <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761a.625.625 0 1 0 0-1.25H4.761a3.273 3.273 0 0 1-3.27-3.27 3.273 3.273 0 0 1 3.194-3.27c.05 0 .1.002.15.005a.625.625 0 0 0 .677-.54C5.952 3.232 8.13 1.25 10.705 1.25c2.944 0 5.336 2.392 5.336 5.336v.211c0 .199.093.386.252.506.756.571 1.193 1.44 1.193 2.383a2.835 2.835 0 0 1-2.833 2.833h-1.578a.625.625 0 1 0 0 1.25h1.578c2.255 0 4.083-1.828 4.083-4.083 0-1.223-.528-2.354-1.415-3.088v-.012C17.321 3.098 14.328 0 10.705 0z"/>
+                    </svg>
+                </a>
+                <a href="https://app.hackthebox.com/users/952852" target="_blank" rel="noopener noreferrer" class="social-icon" title="HackTheBox">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 1.25rem; height: 1.25rem;">
+                        <path d="M11.996 0a1.119 1.119 0 0 0-.057.001.9.9 0 0 0-.236.05l-.149.053-9.23 3.69A1.036 1.036 0 0 0 1.603 5v8.5a1.04 1.04 0 0 0 .475.876l8.5 5.5a1.03 1.03 0 0 0 1.064.034l8.5-5.5a1.04 1.04 0 0 0 .475-.876V5c0-.393-.223-.753-.574-.907l-9.23-3.69-.149-.053a.9.9 0 0 0-.236-.05A1.12 1.12 0 0 0 11.996 0zm.004 2.253l6.5 2.6v3.398l-6.5 4.115-6.5-4.115V4.853l6.5-2.6zM4.5 8.067l6.5 4.115v7.193l-6.5-4.193V8.067zm15 0v7.115l-6.5 4.193v-7.193l6.5-4.115z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-bg">
+        <div class="container">
+            <h2 class="fade-in">About Me</h2>
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <p>I'm an offensive security specialist and infrastructure architect with over 6 years of hands-on experience in cybersecurity, system administration, and IT infrastructure management. Currently working as an ICT Technician at Computer Automation Ltd, managing critical infrastructure across multiple branches in Malawi.</p>
+                    
+                    <p>My expertise spans penetration testing, network security assessments, Active Directory administration, Linux/Windows server hardening, and cloud infrastructure security. I combine practical hands-on skills with a deep understanding of security frameworks and compliance requirements.</p>
+
+                    <p>I'm passionate about cybersecurity, digital forensics, and building secure, resilient infrastructure. When I'm not securing systems, I enjoy exploring emerging threats, contributing to open-source security projects, and mentoring aspiring security professionals.</p>
+
+                    <div class="certifications-highlight">
+                        <h3><i class="fas fa-certificate"></i> Key Certifications</h3>
+                        <ul>
+                            <li>Google Cybersecurity Professional Certificate</li>
+                            <li>(ISC)² Certified Associate (CC)</li>
+                            <li>Cisco Certified Cybersecurity Associate</li>
+                            <li>Fortinet NSE 1-3</li>
+                            <li>CSI Linux Certified</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about-profile">
+                    <div class="profile-card fade-in">
+                        <div class="profile-image">
+                            <img src="images/DSC_0238.jpg.jpeg" alt="Dickson Mervyn Kapichi - Cybersecurity Specialist" loading="lazy">
+                        </div>
+                        <h3>Dickson Mervyn Kapichi</h3>
+                        <p class="role">Cybersecurity Specialist</p>
+                        
+                        <div class="info-section">
+                            <div class="info-row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Lilongwe, Malawi</span>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value"><a href="mailto:d.kapichi@outlook.com">d.kapichi@outlook.com</a></span>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value"><a href="tel:+265884499029">+265 884 499 029</a></span>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-building"></i>
+                                <div>
+                                    <span class="info-label">Organization</span>
+                                    <span class="info-value">Sentinel Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-bg-alt">
+        <div class="container">
+            <h2 class="fade-in">Services</h2>
+            <div class="services-grid">
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Comprehensive offensive security assessments to identify and exploit vulnerabilities before attackers do.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> External/Internal Assessments</li>
+                        <li><i class="fas fa-check-circle"></i> Vulnerability Exploitation</li>
+                        <li><i class="fas fa-check-circle"></i> Detailed Reporting & Remediation</li>
+                    </ul>
+                </article>
+
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infrastructure Security</h3>
+                    <p>Secure architecture design and hardening for Windows Server, Linux, Active Directory, and cloud platforms.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> AD Configuration & GPO Management</li>
+                        <li><i class="fas fa-check-circle"></i> Server Hardening & Patching</li>
+                        <li><i class="fas fa-check-circle"></i> Architecture Design</li>
+                    </ul>
+                </article>
+
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Security Assessments</h3>
+                    <p>Comprehensive security audits including network assessments, application security reviews, and compliance evaluations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Network Security Audits</li>
+                        <li><i class="fas fa-check-circle"></i> Vulnerability Scanning</li>
+                        <li><i class="fas fa-check-circle"></i> Compliance Evaluation</li>
+                    </ul>
+                </article>
+
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Hardening</h3>
+                    <p>End-to-end security hardening for systems, networks, and applications based on industry best practices.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> System Hardening</li>
+                        <li><i class="fas fa-check-circle"></i> Network Segmentation</li>
+                        <li><i class="fas fa-check-circle"></i> Security Baseline Implementation</li>
+                    </ul>
+                </article>
+
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Digital Forensics</h3>
+                    <p>Incident investigation, evidence collection, and forensic analysis for incident response and legal proceedings.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Incident Investigation</li>
+                        <li><i class="fas fa-check-circle"></i> Evidence Collection & Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Forensic Reporting</li>
+                    </ul>
+                </article>
+
+                <article class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Infrastructure Management</h3>
+                    <p>Multi-site IT infrastructure management, system administration, and technical support services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> System Administration</li>
+                        <li><i class="fas fa-check-circle"></i> Network Management</li>
+                        <li><i class="fas fa-check-circle"></i> Technical Support</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-bg">
+        <div class="container">
+            <h2 class="fade-in">Recent Projects & Case Studies</h2>
+            <div class="portfolio-grid">
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Penetration Testing Methodology Development</h3>
+                        <span class="portfolio-tag">Penetration Testing</span>
+                    </div>
+                    <p>Designed and implemented a comprehensive penetration testing methodology for Computer Automation Ltd, covering external VPS and internal LAN assessments with detailed reporting framework.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> Network reconnaissance & enumeration</li>
+                        <li><i class="fas fa-angle-right"></i> Vulnerability identification & exploitation</li>
+                        <li><i class="fas fa-angle-right"></i> Post-exploitation & lateral movement</li>
+                        <li><i class="fas fa-angle-right"></i> Professional reporting & remediation guidance</li>
+                    </ul>
+                </article>
+
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-directory"></i>
+                        </div>
+                        <h3>Active Directory Infrastructure Hardening</h3>
+                        <span class="portfolio-tag">Infrastructure</span>
+                    </div>
+                    <p>Redesigned and secured multi-site Active Directory infrastructure with GPO management, group creation, RDS/RemoteApp deployment, and enterprise password policies.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> AD structure optimization & security</li>
+                        <li><i class="fas fa-angle-right"></i> Group Policy Objects (GPO) configuration</li>
+                        <li><i class="fas fa-angle-right"></i> RDS/RemoteApp deployment</li>
+                        <li><i class="fas fa-angle-right"></i> Multi-site replication & disaster recovery</li>
+                    </ul>
+                </article>
+
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Digital Forensics Case Study</h3>
+                        <span class="portfolio-tag">Forensics</span>
+                    </div>
+                    <p>Comprehensive forensic investigation case study ("The Midnight Transfer Case") covering cybercriminal profiling, fraud analysis, and digital evidence investigation techniques.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> Cybercriminal profiling & threat analysis</li>
+                        <li><i class="fas fa-angle-right"></i> Fraud Triangle assessment</li>
+                        <li><i class="fas fa-angle-right"></i> Digital evidence collection & chain of custody</li>
+                        <li><i class="fas fa-angle-right"></i> Professional forensic reporting</li>
+                    </ul>
+                </article>
+
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Infrastructure & Email Server Setup</h3>
+                        <span class="portfolio-tag">Infrastructure</span>
+                    </div>
+                    <p>Designed, deployed, and secured professional web and email infrastructure on AlmaLinux/cPanel with Postfix/Dovecot mail services and hardening best practices.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> Web server configuration & optimization</li>
+                        <li><i class="fas fa-angle-right"></i> Mail server setup (Postfix/Dovecot)</li>
+                        <li><i class="fas fa-angle-right"></i> SSL/TLS certificate management</li>
+                        <li><i class="fas fa-angle-right"></i> Security hardening & monitoring</li>
+                    </ul>
+                </article>
+
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Cybersecurity Portfolio Website</h3>
+                        <span class="portfolio-tag">Web Development</span>
+                    </div>
+                    <p>Developed a professional cybersecurity portfolio website with advanced animations, security headers, SEO optimization, and responsive design.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> Modern web design & UX</li>
+                        <li><i class="fas fa-angle-right"></i> Security hardening & CSP</li>
+                        <li><i class="fas fa-angle-right"></i> SEO optimization & structured data</li>
+                        <li><i class="fas fa-angle-right"></i> Responsive & accessible design</li>
+                    </ul>
+                </article>
+
+                <article class="portfolio-card fade-in">
+                    <div class="portfolio-header">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Forensic Accounting Analysis</h3>
+                        <span class="portfolio-tag">Digital Forensics</span>
+                    </div>
+                    <p>Developed forensic accounting case study with Benford's Law analysis, indirect income reconstruction, and working capital analysis for fraud investigation.</p>
+                    <ul class="portfolio-details">
+                        <li><i class="fas fa-angle-right"></i> Benford's Law statistical analysis</li>
+                        <li><i class="fas fa-angle-right"></i> Indirect income reconstruction</li>
+                        <li><i class="fas fa-angle-right"></i> Financial pattern analysis</li>
+                        <li><i class="fas fa-angle-right"></i> Comprehensive documentation</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <!-- Clients & Collaborators -->
+    <section id="clients" class="section-bg-alt">
+        <div class="container">
+            <h2 class="fade-in">Clients & Collaborators</h2>
+            <div class="clients-grid fade-in">
+                <div class="client-logo">Malawi<br>Government</div>
+                <div class="client-logo">MLW</div>
+                <div class="client-logo">ICTAM</div>
+                <div class="client-logo">ActionAid</div>
+                <div class="client-logo">First Capital Bank</div>
+                <div class="client-logo">Nico Tech</div>
+            </div>
+        </div>
+    </section>
+    <section id="expertise" class="section-bg-alt">
+        <div class="container">
+            <h2 class="fade-in">Core Expertise</h2>
+            <div class="expertise-grid fade-in">
+                <div class="expertise-card">
+                    <div class="expertise-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> Network Security & Architecture</li>
+                        <li><i class="fas fa-angle-right"></i> Penetration Testing & Ethical Hacking</li>
+                        <li><i class="fas fa-angle-right"></i> Malware Analysis & Reverse Engineering</li>
+                        <li><i class="fas fa-angle-right"></i> Active Directory & GPO Management</li>
+                        <li><i class="fas fa-angle-right"></i> Linux/Windows System Administration</li>
+                        <li><i class="fas fa-angle-right"></i> Cloud Infrastructure (AWS, Azure, GCP)</li>
+                        <li><i class="fas fa-angle-right"></i> Security Information & Event Management (SIEM)</li>
+                        <li><i class="fas fa-angle-right"></i> Digital Forensics & Incident Response</li>
+                    </ul>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Leadership & Strategy</h3>
+                    </div>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> Security Operations Center (SOC) Management</li>
+                        <li><i class="fas fa-angle-right"></i> Risk Assessment & Management</li>
+                        <li><i class="fas fa-angle-right"></i> Vulnerability Management Programs</li>
+                        <li><i class="fas fa-angle-right"></i> Security Policy Development</li>
+                        <li><i class="fas fa-angle-right"></i> Incident Response Planning</li>
+                        <li><i class="fas fa-angle-right"></i> Team Building & Mentorship</li>
+                        <li><i class="fas fa-angle-right"></i> Digital Transformation Initiatives</li>
+                        <li><i class="fas fa-angle-right"></i> Technology Roadmap Development</li>
+                    </ul>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-header">
+                        <div class="expertise-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-angle-right"></i> Penetration Testing: Metasploit, Burp Suite, Caido</li>
+                        <li><i class="fas fa-angle-right"></i> SIEM: Elasticsearch, Splunk, Wazuh</li>
+                        <li><i class="fas fa-angle-right"></i> OS: Kali Linux, AlmaLinux, Ubuntu, Windows Server</li>
+                        <li><i class="fas fa-angle-right"></i> Cloud: AWS, Azure, GCP, Linode</li>
+                        <li><i class="fas fa-angle-right"></i> Databases: MySQL, PostgreSQL, SQL Server</li>
+                        <li><i class="fas fa-angle-right"></i> Web: Apache, Nginx, cPanel</li>
+                        <li><i class="fas fa-angle-right"></i> Scripting: Python, Bash, PowerShell</li>
+                        <li><i class="fas fa-angle-right"></i> Forensics: Autopsy, Volatility, Wireshark</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-bg">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2>Get in Touch</h2>
+                <p class="contact-text">Available for consulting engagements, advisory roles, and leadership opportunities. Let's discuss how we can work together to strengthen your cybersecurity posture.</p>
+                
+                <article class="contact-card">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <label for="cf-name">Your name</label>
+                            <input id="cf-name" name="name" type="text" required placeholder="Your name">
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-email">Email</label>
+                            <input id="cf-email" name="email" type="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-subject">Nature of message</label>
+                            <input id="cf-subject" name="subject" type="text" required placeholder="Consulting / Advisory / Other">
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <a class="btn btn-outline" href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">Schedule Call</a>
+                        </div>
+                        <p id="cf-status" class="form-status" aria-live="polite"></p>
+                    </form>
+                    <div class="social-links-large">
+                        <a href="https://www.linkedin.com/in/dickson-mervyn-kapichi/" target="_blank" rel="noopener noreferrer" class="social-icon-large" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Odyseccus" class="social-icon-large" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/pray4merv" target="_blank" rel="noopener noreferrer" class="social-icon-large" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Legal Footer -->
+    <aside class="legal">
+        <div class="legal-content">
+            <i class="fas fa-balance-scale"></i>
+            <p>This website provides professional information only and does not constitute legal or security guarantees. All certifications and trademarks mentioned are property of their respective owners. Third-party content and images are used under license or fair use provisions.</p>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Dickson Mervyn Kapichi. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

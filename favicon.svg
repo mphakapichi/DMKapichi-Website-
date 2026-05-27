@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DMK favicon">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#020617"/>
+  <path d="M18 16 L32 8 L46 16 V30 C46 44 32 54 32 54 C32 54 18 44 18 30 V16 Z" fill="url(#grad)" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M26 26 H34 L30 40 Z" fill="#fff"/>
+  <path d="M38 26 H42 V40 H38 Z" fill="#fff"/>
+</svg>
