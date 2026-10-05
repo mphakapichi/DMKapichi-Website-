@@ -132,7 +132,8 @@
     }
     </script>
 </head>
-<body>
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Loader -->
     <div class="loader-wrapper" id="loader">
         <div class="loader-content">
@@ -151,9 +152,9 @@
     <!-- Navigation -->
     <nav id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
+            <a class="logo" href="#top" title="Back to top" aria-label="Back to top">
                 <i class="fas fa-shield-alt"></i> DMK
-            </div>
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -165,7 +166,7 @@
                 <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light and dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-controls="navLinks" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -173,7 +174,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg"></div>
@@ -258,7 +259,7 @@
                 <div class="about-profile">
                     <div class="profile-card fade-in">
                         <div class="profile-image">
-                            <img src="images/DSC_0238.jpg.jpeg" alt="Dickson Mervyn Kapichi - Cybersecurity Specialist" loading="lazy">
+                            <img src="images/DSC_0238.jpg.jpeg" alt="Dickson Mervyn Kapichi - Cybersecurity Specialist" loading="lazy" decoding="async">
                         </div>
                         <h3>Dickson Mervyn Kapichi</h3>
                         <p class="role">Cybersecurity Specialist</p>
