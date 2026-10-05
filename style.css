@@ -14,6 +14,8 @@
     --accent-primary: #60a5fa;
     --accent-secondary: #22d3ee;
     --accent-blue: #2563eb;
+    --focus-ring: #22d3ee;
+    --surface-glass: rgba(15, 23, 42, 0.72);
 }
 
 body.light-mode {
@@ -35,6 +37,30 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    background: var(--accent-blue);
+    color: #fff;
+    padding: 0.65rem 0.9rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transform: translateY(-160%);
+    transition: transform 0.2s ease;
+    z-index: 1100;
+}
+
+.skip-link:focus-visible {
+    transform: translateY(0);
 }
 
 code, pre {
@@ -149,7 +175,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(2, 6, 23, 0.85);
+    background: var(--surface-glass);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     transform: translateY(0);
@@ -217,6 +243,10 @@ nav.hidden {
 }
 
 .nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.nav-links a[aria-current="page"] {
     color: var(--text-primary);
 }
 
@@ -375,6 +405,14 @@ nav.hidden {
 
 .btn:active {
     transform: translateY(1px) scale(0.98);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
 }
 
 .btn::before {
@@ -1233,7 +1271,7 @@ body.light-mode .scroll-top {
         top: 100%;
         left: 0;
         right: 0;
-        background: #0f172a;
+        background: var(--bg-secondary);
         padding: 1.5rem;
         gap: 1rem;
         border-top: 1px solid #1e293b;
@@ -1312,6 +1350,13 @@ body.light-mode .scroll-top {
     }
 }
 
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 /* New: Hero name / intro */
 .hero-intro {
     color: var(--text-muted);
@@ -1380,6 +1425,13 @@ body.light-mode .scroll-top {
     border: 1px solid var(--border-color);
     background: var(--bg-primary);
     color: var(--text-primary);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form .form-row input:focus,
+.contact-form .form-row textarea:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
 }
 .contact-form .form-actions {
     display: flex;
@@ -1447,5 +1499,19 @@ body.light-mode .scroll-top {
 
     .logo {
         font-size: 1.1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

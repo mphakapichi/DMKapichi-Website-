@@ -173,14 +173,32 @@ const mobileMenuBtn = safeQuerySelector('#mobileMenuBtn');
 const navLinks = safeQuerySelector('#navLinks');
 
 if (mobileMenuBtn && navLinks) {
+    const setMenuState = (isOpen) => {
+        navLinks.classList.toggle('active', isOpen);
+        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+            icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+        }
+    };
+
     mobileMenuBtn.addEventListener('click', (e) => {
         e.preventDefault();
         if (!interactionLimiter.check()) return;
+        setMenuState(!navLinks.classList.contains('active'));
+    });
 
-        navLinks.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (icon) {
-            icon.className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+            setMenuState(false);
+            mobileMenuBtn.focus();
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        const clickIsInsideNav = navLinks.contains(event.target) || mobileMenuBtn.contains(event.target);
+        if (!clickIsInsideNav && navLinks.classList.contains('active')) {
+            setMenuState(false);
         }
     });
 }
@@ -200,7 +218,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = safeQuerySelector(href);
         if (target) {
             target.scrollIntoView({ behavior: 'smooth' });
+            document.querySelectorAll('#navLinks a').forEach(link => {
+                link.removeAttribute('aria-current');
+            });
+            if (this.closest('#navLinks')) {
+                this.setAttribute('aria-current', 'page');
+            }
             if (navLinks) navLinks.classList.remove('active');
+            if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
             const icon = mobileMenuBtn?.querySelector('i');
             if (icon) icon.className = 'fas fa-bars';
         }
@@ -321,19 +346,27 @@ document.querySelectorAll('.btn').forEach(button => {
 
 // Typing effect for hero subtitle
 const subtitle = document.querySelector('.hero-subtitle');
-const originalText = subtitle.textContent;
-subtitle.textContent = '';
-let i = 0;
+if (subtitle) {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const originalText = subtitle.textContent;
+    let i = 0;
 
-function typeWriter() {
-    if (i < originalText.length) {
-        subtitle.textContent += originalText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
+    if (!prefersReducedMotion) {
+        subtitle.textContent = '';
+    }
+
+    function typeWriter() {
+        if (i < originalText.length) {
+            subtitle.textContent += originalText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    }
+
+    if (!prefersReducedMotion) {
+        setTimeout(typeWriter, 1000);
     }
 }
-
-setTimeout(typeWriter, 1000);
 
 // Cybersecurity-themed Particles animation
 class Particle {
@@ -998,10 +1031,16 @@ function initParticles() {
 document.addEventListener('DOMContentLoaded', () => {
     initParticles();
     themeManager.init();
+    const activeHash = window.location.hash || '#about';
+    document.querySelectorAll('#navLinks a').forEach((link) => {
+        if (link.getAttribute('href') === activeHash) {
+            link.setAttribute('aria-current', 'page');
+        }
+    });
 
     // Image fallback without inline handlers (avoids security pattern match)
     try {
-        const profileImg = safeQuerySelector('.profile-icon img');
+        const profileImg = safeQuerySelector('.profile-image img');
         if (profileImg) {
             profileImg.addEventListener('error', function () {
                 const parent = this.parentElement;
